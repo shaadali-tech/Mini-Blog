@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import axios from "axios";
 
 // Import pages
 import Posts from "./pages/Posts";
