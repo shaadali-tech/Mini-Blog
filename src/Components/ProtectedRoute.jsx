@@ -10,13 +10,4 @@ function ProtectedRoute({ children }) {
   return children;
 }
 
-<Route
-  path="/dashboard"
-  element={
-    <ProtectedRoute>
-      <Dashboard />
-    </ProtectedRoute>
-  }
-/>;
-
 export default ProtectedRoute;

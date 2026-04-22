@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axiosInstance from "../services/axiosInstance";
+import axiosInstance from "../Api/axiosInstance";
 
 const Login = () => {
   const [email, setEmail] = useState("");

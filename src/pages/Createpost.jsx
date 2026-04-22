@@ -1,4 +1,4 @@
-import PostForm from "../components/PostForm";
+import PostForm from "../Components/PostForm";
 
 export default function CreatePost() {
   return (

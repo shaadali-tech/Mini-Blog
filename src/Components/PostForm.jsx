@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createPost } from "../services/api";
+import axiosInstance from "../Api/axiosInstance";
 
 export default function PostForm() {
   const [title, setTitle] = useState("");
@@ -7,7 +7,7 @@ export default function PostForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await createPost({ title, body });
+    const res = await axiosInstance.post("/posts", { title, body });
     console.log(res.data);
     alert("Post Created!");
   };
